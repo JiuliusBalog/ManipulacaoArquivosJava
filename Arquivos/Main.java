@@ -26,7 +26,7 @@ public class Main {
                     System.out.println("to dando o fora daqui tlgd mermao");
                     System.exit(0);
                 default:
-                    System.out.println("seleciona o bgl certo seu viado");
+                    System.out.println("seleciona o bgl certo aí mano");
             }
         }
     }
