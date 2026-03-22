@@ -10,7 +10,7 @@ public class Ler {
         System.out.println("Processo de leitura foi iniciado.");
 
         String nomeArquivo;
-        System.out.println("Nome do arquivo a ser lido (incluindo a extensão, ex: arquivo.txt)");
+        System.out.print("Nome do arquivo a ser lido (incluindo a extensão, ex: arquivo.txt): ");
         nomeArquivo = input.nextLine();
 
         File pasta = new File(path, "Files");

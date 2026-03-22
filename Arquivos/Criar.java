@@ -11,9 +11,8 @@ public class Criar {
         try {
             System.out.println("Processo de criação foi iniciado.\n");
 
-            System.out.println("Nome do arquivo: ");
+            System.out.print("Nome do arquivo: ");
             nomeArquivo = input.nextLine();
-
 
             if (pasta.exists() == false) {
                 System.out.println("A pasta necessária não existe, portanto está sendo criada");
