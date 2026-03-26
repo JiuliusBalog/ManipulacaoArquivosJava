@@ -1,27 +1,25 @@
-package Arquivos;
+package ManipulacaoArquivosJava.Arquivos;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Criar {
-    public static void criar() throws IOException {
+    public static void criar(Scanner input, String path) throws IOException {
         String nomeArquivo;
-        String path = "/home/jiuliusbalog/Downloads/Programas/idea-IC-233.15619.7/projetos/Arquivos/src/Arquivos/";
         File pasta = new File(path, "Files");
 
         try {
-            System.out.println("Processo de criação iniciado.\n");
-            Scanner scan = new Scanner(System.in);
+            System.out.println("Processo de criação foi iniciado.\n");
 
-            System.out.println("Nome do arquivo: ");
-            nomeArquivo = scan.nextLine();
+            System.out.print("Nome do arquivo: ");
+            nomeArquivo = input.nextLine();
 
-
-            if (pasta.exists() == false) {
+            if (!pasta.exists()) {
                 System.out.println("A pasta necessária não existe, portanto está sendo criada");
                 pasta.mkdirs();
                 System.out.println("Pasta criada com sucesso");
             }
+
             File arquivo = new File(pasta, nomeArquivo);
             boolean status = arquivo.createNewFile();
 
