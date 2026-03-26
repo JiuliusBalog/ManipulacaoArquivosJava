@@ -12,7 +12,7 @@ public class Main {
 
 
         while (opc != 9) {
-            System.out.println("========================================\n                  MENU\n========================================\n|1.              Criar                 |\n|2.               Ler                  |\n|3.             Deletar                |\n|4.             Escrever               |\n|9.          Fechar programa           |\n========================================");
+            System.out.println("========================================\n            MENU DE ARQUIVOS\n========================================\n|1.              Criar                 |\n|2.              Listar                |\n|3.               Ler                  |\n|4.             Deletar                |\n|5.             Escrever               |\n|9.          Fechar programa           |\n========================================");
             opc = input.nextInt();
             input.nextLine();
             switch (opc) {
@@ -20,12 +20,15 @@ public class Main {
                     Criar.criar(input, path);
                     break;
                 case 2:
-                    Ler.ler(input, path);
+                    Listar.listarArquivos(input, path);
                     break;
                 case 3:
-                    Apagar.apagar(input, path);
+                    Ler.ler(input, path);
                     break;
                 case 4:
+                    Apagar.apagar(input, path);
+                    break;
+                case 5:
                     Escrever.escrever(input, path);
                     break;
                 case 9:

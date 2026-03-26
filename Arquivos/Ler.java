@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.io.File;
 
 public class Ler {
-    public static void ler(Scanner input, String path) throws FileNotFoundException {
+    public static void ler(Scanner input, String path) {
         System.out.println("Processo de leitura foi iniciado.");
 
         String nomeArquivo;
@@ -22,6 +22,7 @@ public class Ler {
             }
         } catch(IOException e){
             System.out.println("Não existe nenhum arquivo com este nome, tente novamente");
+            e.printStackTrace();
         }
 
     }

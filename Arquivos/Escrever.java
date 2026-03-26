@@ -23,6 +23,9 @@ public class Escrever {
             return;
         }
 
+        System.out.print("Deseja sobrescrever ou adicionar? (s/a): ");
+        String opcao = input.nextLine();
+
         System.out.print("Insira o conteúdo a ser escrito no arquivo: ");
         conteudo = input.nextLine();
 

@@ -14,11 +14,12 @@ public class Criar {
             System.out.print("Nome do arquivo: ");
             nomeArquivo = input.nextLine();
 
-            if (pasta.exists() == false) {
+            if (!pasta.exists()) {
                 System.out.println("A pasta necessária não existe, portanto está sendo criada");
                 pasta.mkdirs();
                 System.out.println("Pasta criada com sucesso");
             }
+
             File arquivo = new File(pasta, nomeArquivo);
             boolean status = arquivo.createNewFile();
 
